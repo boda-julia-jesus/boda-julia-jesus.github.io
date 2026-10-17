@@ -17,6 +17,14 @@
   function renderHeroImage() {
     const path = clean(config.images && config.images.hero), hero = $(".hero");
     if (!path || !hero) return;
+    const photos = $(".hero__photo", hero);
+    const existing = photos[0];
+    photos.slice(1).forEach((image) => image.remove());
+    if (existing) {
+      existing.alt = clean(config.images.heroAlt) || "Fotografía de Júlia y Jesús";
+      hero.classList.add("hero--photo");
+      return;
+    }
     const image = document.createElement("img"); image.className = "hero__photo"; image.src = path; image.alt = clean(config.images.heroAlt) || "Fotografía de Júlia y Jesús"; hero.prepend(image); hero.classList.add("hero--photo");
   }
   function renderVenueImage() {
@@ -61,9 +69,14 @@
   }
   function renderForms() {
     const url = clean(config.forms && config.forms.url);
+    const suggestionsUrl = clean(config.forms && config.forms.suggestionsUrl) || url;
     const links = $$("[data-form-link]"), pending = $$("[data-form-pending]");
     if (!url) { links.forEach((link) => { link.hidden = true; }); return; }
-    links.forEach((link) => { link.href = url; link.hidden = false; }); pending.forEach((note) => { note.hidden = true; });
+    links.forEach((link) => {
+      link.href = link.matches("[data-suggestions-link]") ? suggestionsUrl : url;
+      link.hidden = false;
+    });
+    pending.forEach((note) => { note.hidden = true; });
   }
   function renderGallery() {
     const link = $("[data-gallery-link]");

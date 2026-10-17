@@ -1,12 +1,3 @@
-/*
- * DATOS EDITABLES DE LA INVITACIÓN
- *
- * Este es el único archivo que necesitas tocar para personalizar el contenido.
- * - Cambia nombres, textos, enlace y paleta en este objeto.
- * - Deja una cadena vacía ("") en horarios/logística si todavía no está confirmada:
- *   la sección correspondiente se oculta automáticamente.
- * - Para añadir fotografías, coloca los archivos en assets/ y escribe su ruta aquí.
- */
 window.INVITATION_CONFIG = {
   couple: {
     names: "Júlia & Jesús",
@@ -40,9 +31,12 @@ window.INVITATION_CONFIG = {
    * Sustituye este valor por HH:MM cuando decidáis otra referencia.
    */
   countdown: { referenceTime: "12:45", timezone: "Europe/Madrid" },
-  images: { hero: "", heroAlt: "Fotografía de Júlia y Jesús", venue: "assets/mas-les-lloses.png" },
-  // Introduce aquí la URL completa del único Google Form de asistencia y sugerencias.
-  forms: { url: "https://docs.google.com/forms/d/e/1FAIpQLSdtb-fXFIuBlKXIap61AIZf19zRRfQXYqGVatMNtv6XOLmVaQ/viewform?usp=publish-editor" },
+  images: { hero: "CONAMOR26JULIAYJESUS-115.jpg", heroAlt: "Fotografía de Júlia y Jesús", venue: "assets/mas-les-lloses.png" },
+  // Formularios independientes: asistencia y sugerencias.
+  forms: {
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSdtb-fXFIuBlKXIap61AIZf19zRRfQXYqGVatMNtv6XOLmVaQ/viewform",
+    suggestionsUrl: "https://docs.google.com/forms/d/e/1FAIpQLScjLQns6rwUxMKNkxRw9Y9ASBaTvvGqjOvVEkgRUhNGxnSUQA/viewform"
+  },
   galleryUrl: "",
   gift: { iban: "" },
   privacy: {
@@ -52,10 +46,11 @@ window.INVITATION_CONFIG = {
     retention: "",
     rights: ""
   },
-  theme: { ivory: "#F8F6F1", olive: "#A8BBCB", sand: "#F3B8A5", ink: "#304B65", terracotta: "#E89587" },
+  theme: { ivory: "#F8F6F1", olive: "#A8BBCB", sand: "#F3B8A5", ink: "#304B65", terracotta: "#EF9D91", paper: "#F8EEE8" },
   sharing: {
     title: "Júlia & Jesús — Nuestra boda",
     description: "Una invitación para compartir un día muy especial: 10 de abril de 2027, en Mas Les Lloses.",
     publicUrl: "https://boda-julia-jesus.github.io/"
   }
 };
+
