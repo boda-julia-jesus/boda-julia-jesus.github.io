@@ -423,11 +423,16 @@
   }
 
   .attendance .button,
-  .suggestions .button {
+  .suggestions .button,
+  .place__maps-button {
     min-height: 3.5rem;
     padding: .9rem 1rem;
     font-size: 1rem;
     line-height: 1.25;
+  }
+
+  .attendance__answer {
+    margin-top: .25rem;
   }
 }
 

@@ -231,15 +231,35 @@ h2 { font-size: clamp(2.7rem, 13vw, 7rem); line-height: 0.92; letter-spacing: -0
   text-transform: uppercase;
 }
 .attendance .button span, .suggestions .button span, .place__maps-button span { color: #293326; font-size: 1.35rem; }
-.gift__iban { margin-top: 2.2rem; }
+.gift__iban { display: flex; flex-wrap: wrap; align-items: center; gap: .85rem; margin-top: 2.2rem; }
 .gift__iban code[data-iban] {
   display: block;
+  flex: 1 1 100%;
   max-width: 100%;
   overflow-wrap: anywhere;
-  color: #B56576;
-  font: 700 clamp(1.8rem, 5.6vw, 2.6rem)/1.18 var(--mono);
+  color: var(--ink);
+  font: 700 clamp(1rem, 1.1vw, 1.125rem)/1.55 var(--mono);
   letter-spacing: .04em;
 }
+.copy-button {
+  appearance: none;
+  border: 1px solid color-mix(in srgb, var(--ink) 55%, transparent);
+  border-radius: 999px;
+  padding: .7rem 1rem;
+  background: transparent;
+  color: var(--ink);
+  font: 600 .7rem/1.2 var(--sans);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color .2s ease, color .2s ease, transform .2s ease;
+}
+.copy-button:hover,
+.copy-button:focus-visible {
+  background: var(--ink);
+  color: var(--ivory);
+}
+.copy-button:active { transform: translateY(1px); }
 @media (max-width: 719px) {
   .attendance .button, .suggestions .button, .place__maps-button {
     width: 100%;
