@@ -140,8 +140,9 @@
 
 /* Composición editorial de escritorio: límites de lectura y portada estable */
 .attendance__answer {
-  margin-bottom: 1.4rem;
-  text-transform: none;
+  margin-top: -0.65rem;
+  margin-bottom: 1.65rem;
+  text-transform: uppercase;
 }
 .transport-card {
   margin-top: 3.2rem;

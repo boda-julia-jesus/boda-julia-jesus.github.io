@@ -231,6 +231,15 @@ h2 { font-size: clamp(2.7rem, 13vw, 7rem); line-height: 0.92; letter-spacing: -0
   text-transform: uppercase;
 }
 .attendance .button span, .suggestions .button span, .place__maps-button span { color: #293326; font-size: 1.35rem; }
+.gift__iban { margin-top: 2.2rem; }
+.gift__iban code[data-iban] {
+  display: block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  color: #B56576;
+  font: 700 clamp(1.8rem, 5.6vw, 2.6rem)/1.18 var(--mono);
+  letter-spacing: .04em;
+}
 @media (max-width: 719px) {
   .attendance .button, .suggestions .button, .place__maps-button {
     width: 100%;
