@@ -341,6 +341,15 @@
     font-size: clamp(1.625rem, 7.4vw, 1.875rem);
     line-height: 1.05;
   }
+  .welcome h2,
+  .attendance h2,
+  .day h2,
+  .place__copy h2,
+  .suggestions h2,
+  .gift h2,
+  .countdown h2 {
+    font-size: clamp(1.85rem, 8.8vw, 2.2rem);
+  }
   main p,
   .body-copy,
   .welcome .copy-column > p:not(.eyebrow),
