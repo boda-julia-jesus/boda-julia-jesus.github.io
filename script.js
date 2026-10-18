@@ -17,7 +17,7 @@
   function renderHeroImage() {
     const path = clean(config.images && config.images.hero), hero = $(".hero");
     if (!path || !hero) return;
-    const photos = $(".hero__photo", hero);
+    const photos = $$(".hero__photo", hero);
     const existing = photos[0];
     photos.slice(1).forEach((image) => image.remove());
     if (existing) {
