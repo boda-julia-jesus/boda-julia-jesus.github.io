@@ -68,6 +68,7 @@ h2 { font-size: clamp(2.7rem, 13vw, 7rem); line-height: 0.92; letter-spacing: -0
 .branch-leaf { fill: var(--olive); }
 .place__copy h2 { max-width: 20rem; margin-bottom: 1.6rem; font-size: clamp(2.9rem, 14vw, 6.4rem); }
 .text-link { display: inline-flex; gap: 0.8rem; align-items: center; border-bottom: 1px solid var(--olive); padding-bottom: 0.55rem; color: var(--ink); font: .65rem var(--mono); letter-spacing: 0.12em; text-decoration: none; text-transform: uppercase; }
+.transport-card { margin-top: 3rem; }
 .text-link span { color: var(--olive); font-size: 1.1rem; }
 .text-link:focus-visible, .back-top:focus-visible, .scroll-cue:focus-visible { outline: 2px solid var(--terracotta); outline-offset: 5px; }
 .practical { min-height: 78svh; background: var(--olive); color: var(--ivory); }
@@ -210,7 +211,7 @@ h2 { font-size: clamp(2.7rem, 13vw, 7rem); line-height: 0.92; letter-spacing: -0
 .suggestions .button span { color: #293326; }
 
 /* Botones principales: grandes, claros y fáciles de identificar */
-.attendance .button, .suggestions .button {
+.attendance .button, .suggestions .button, .place__maps-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -229,9 +230,9 @@ h2 { font-size: clamp(2.7rem, 13vw, 7rem); line-height: 0.92; letter-spacing: -0
   text-decoration: none;
   text-transform: uppercase;
 }
-.attendance .button span, .suggestions .button span { color: #293326; font-size: 1.35rem; }
+.attendance .button span, .suggestions .button span, .place__maps-button span { color: #293326; font-size: 1.35rem; }
 @media (max-width: 719px) {
-  .attendance .button, .suggestions .button {
+  .attendance .button, .suggestions .button, .place__maps-button {
     width: 100%;
     min-height: 4.9rem;
     padding: 1.25rem 1rem;

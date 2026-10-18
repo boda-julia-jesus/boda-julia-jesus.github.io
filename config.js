@@ -5,13 +5,13 @@ window.INVITATION_CONFIG = {
     dateISO: "2027-04-10",
     dateLabel: "10 de abril de 2027",
     venue: "Mas Les Lloses",
-    openingLine: "Hay días que se convierten en recuerdos para toda la vida. Nos encantará compartir el nuestro contigo.",
-    welcome: "Estamos preparando un día para celebrar lo que más nos importa: encontrarnos, brindar y teneros cerca. Aquí iremos guardando todos los detalles.",
+    openingLine: "",
+    welcome: "Estamos organizando éste día para celebrarlo con todas las personas que sabemos que van a darlo todo. Aquí iremos actualizando toda la información.",
     closingLine: "Qué alegría poder vivirlo juntos."
   },
   venue: {
     mapsUrl: "https://www.google.com/maps/place/Mas+Les+Lloses/@39.650392,-0.2971002,17z/data=!3m1!4b1!4m6!3m5!1s0xd603ffe3b1613fb:0xf491e6d823c53425!8m2!3d39.6503879!4d-0.2945253!16s%2Fg%2F11cmr20dpt?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
-    description: "El lugar donde nos encontraremos para celebrar este día. Pronto añadiremos aquí cualquier indicación que pueda resultaros útil.",
+    description: "El lugar donde nos encontraremos para celebrar la boda. Pronto añadiremos aquí cualquier cosa que os pueda ser útil.",
     image: "assets/mas-les-lloses.png",
     imageAlt: "Ilustración de Mas Les Lloses, lugar de la celebración"
   },
@@ -38,7 +38,7 @@ window.INVITATION_CONFIG = {
     suggestionsUrl: "https://docs.google.com/forms/d/e/1FAIpQLScjLQns6rwUxMKNkxRw9Y9ASBaTvvGqjOvVEkgRUhNGxnSUQA/viewform"
   },
   galleryUrl: "",
-  gift: { iban: "" },
+  gift: { iban: "ES3421002908920200253318" },
   privacy: {
     controller: "",
     purpose: "Gestionar la confirmación de asistencia y las necesidades de organización de la boda.",

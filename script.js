@@ -105,13 +105,13 @@
     if (ogImage) ogImage.content = imageUrl; if (twitterImage) twitterImage.content = imageUrl;
   }
   function startCountdown() {
-    const grid = $("[data-countdown]"), message = $("[data-countdown-message]"); if (!grid || !message) return;
+    const grid = $("[data-countdown]"), message = $("[data-countdown-message]"); if (!grid) return;
     const target = zonedTimeToUtc(config.couple.dateISO, config.countdown.referenceTime || "12:00", config.countdown.timezone);
     const update = () => {
       const remaining = Math.max(0, target.getTime() - Date.now()), totalSeconds = Math.floor(remaining / 1000);
       const values = { days: Math.floor(totalSeconds / 86400), hours: Math.floor((totalSeconds % 86400) / 3600), minutes: Math.floor((totalSeconds % 3600) / 60), seconds: totalSeconds % 60 };
       Object.entries(values).forEach(([name, value]) => { const element = $("[data-unit=\"" + name + "\"]"); if (element) element.textContent = String(value).padStart(2, "0"); });
-      if (remaining === 0) { message.textContent = "Hoy es el gran día. ¡Qué emoción!"; grid.classList.add("is-today"); } else message.textContent = "Hasta el " + config.couple.dateLabel;
+      if (remaining === 0) { if (message) message.textContent = "Hoy es el gran día. ¡Qué emoción!"; grid.classList.add("is-today"); } else if (message) message.textContent = "Hasta el " + config.couple.dateLabel;
     };
     update(); window.setInterval(update, 1000);
   }

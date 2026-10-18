@@ -139,6 +139,13 @@
 
 
 /* Composición editorial de escritorio: límites de lectura y portada estable */
+.attendance__answer {
+  margin-bottom: 1.4rem;
+  text-transform: none;
+}
+.transport-card {
+  margin-top: 3.2rem;
+}
 @media (min-width: 720px) {
   .site-header {
     padding: .85rem clamp(1.5rem, 4vw, 4rem);
@@ -399,6 +406,10 @@
   .hero--photo .scroll-cue {
     margin-top: .9rem;
     font-size: .875rem;
+  }
+
+  .transport-card {
+    margin-top: 2.5rem;
   }
 
   .attendance .button,
