@@ -15,7 +15,7 @@ window.INVITATION_CONFIG = {
     image: "assets/mas-les-lloses.png",
     imageAlt: "Ilustración de Mas Les Lloses, lugar de la celebración"
   },
-  schedule: [{ time: "12:45", label: "Inicio de la ceremonia" }],
+  schedule: [{ time: "12:40", label: "Inicio de la ceremonia" }, { time: "17:30", label: "Fiesta" }],
   transport: {
     departureLocation: "",
     departureTime: "",
@@ -27,10 +27,10 @@ window.INVITATION_CONFIG = {
   logistics: { arrival: "", parking: "", notes: "" },
   /*
    * Referencia configurable mientras no haya hora de inicio confirmada.
-   * Se calcula como las 12:45 de Europe/Madrid del día de la boda.
+   * Se calcula como las 12:40 de Europe/Madrid del día de la boda.
    * Sustituye este valor por HH:MM cuando decidáis otra referencia.
    */
-  countdown: { referenceTime: "12:45", timezone: "Europe/Madrid" },
+  countdown: { referenceTime: "12:40", timezone: "Europe/Madrid" },
   images: { hero: "CONAMOR26JULIAYJESUS-115.jpg", heroAlt: "Fotografía de Júlia y Jesús", venue: "assets/mas-les-lloses.png" },
   // Formularios independientes: asistencia y sugerencias.
   forms: {
