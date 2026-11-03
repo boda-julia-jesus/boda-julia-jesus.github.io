@@ -34,3 +34,22 @@ window.INVITATION_CONFIG = {
   images: { hero: "CONAMOR26JULIAYJESUS-115.jpg", heroAlt: "Fotografía de Júlia y Jesús", venue: "assets/mas-les-lloses.png" },
   // Formularios independientes: asistencia y sugerencias.
   forms: {
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSdtb-fXFIuBlKXIap61AIZf19zRRfQXYqGVatMNtv6XOLmVaQ/viewform",
+    suggestionsUrl: "https://docs.google.com/forms/d/e/1FAIpQLScjLQns6rwUxMKNkxRw9Y9ASBaTvvGqjOvVEkgRUhNGxnSUQA/viewform"
+  },
+  galleryUrl: "",
+  gift: { iban: "ES3421002908920200253318" },
+  privacy: {
+    controller: "",
+    purpose: "Gestionar la confirmación de asistencia y las necesidades de organización de la boda.",
+    contact: "",
+    retention: "",
+    rights: ""
+  },
+  theme: { ivory: "#F8F6F1", olive: "#A8BBCB", sand: "#F3B8A5", ink: "#304B65", terracotta: "#EF9D91", paper: "#F8EEE8" },
+  sharing: {
+    title: "Júlia & Jesús — Nuestra boda",
+    description: "Una invitación para compartir un día muy especial: 10 de abril de 2027, en Mas Les Lloses.",
+    publicUrl: "https://boda-julia-jesus.github.io/"
+  }
+};
