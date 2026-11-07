@@ -35,7 +35,7 @@ window.INVITATION_CONFIG = {
   // Formularios independientes: asistencia y sugerencias.
   forms: {
     url: "https://docs.google.com/forms/d/e/1FAIpQLSdtb-fXFIuBlKXIap61AIZf19zRRfQXYqGVatMNtv6XOLmVaQ/viewform",
-    suggestionsUrl: "https://docs.google.com/forms/d/e/1FAIpQLScjLQns6rwUxMKNkxRw9Y9ASBaTvvGqjOvVEkgRUhNGxnSUQA/viewform"
+    suggestionsUrl: "https://docs.google.com/forms/d/e/1FAIpQLScfnKVdrBVpzzXIZMxV3kJzJx3oKSjTvrYoXhojy8MZ6_pUug/viewform"
   },
   galleryUrl: "",
   gift: { iban: "ES3421002908920200253318" },
